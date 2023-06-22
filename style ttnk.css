@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@500&display=swap');
+/*font-family: 'Barlow', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+/*font-family: 'Ubuntu', sans-serif;*/
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	width: 100%;
+	height: 100vh;
+	background: #eaeef0;
+	
+	
+}
+.continer-cont-ani{
+	width: 100%;
+	height: 100vh;
+	position: relative;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+	padding: 50px 0px;
+	overflow: hidden;
+
+	
+}
+.ani-continer{
+	width: 85%;
+
+	height: 50%;
+	position: relative;
+	
+	overflow: hidden;
+	box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+	border-radius: 30px;
+	transition:all 1s ease;
+}
+.ani{
+
+	width: 100%;
+	height:100%;
+	background: linear-gradient(#42abff , #ff4fe8,#ffeb3b );
+	
+	margin:200px auto;
+	padding: 50px;
+	position: absolute;
+	animation: animateCont 2s linear infinite;
+}
+@keyframes animateCont{
+	0%{
+		transform: translateY(-600px);
+	}
+	100%{
+		transform: translateY(500px);
+	}
+}
+.cont{
+
+	width: 70%;
+	height: 35%;
+	background:#eaeef0;
+	position: absolute;
+	border-radius: 30px;
+	box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+	padding: 30px;
+	overflow: hidden;
+	transition:all 1s ease;
+}
+
+
+/*---contact---*/
+
+.cont {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	
+	color: #ffff;
+}
+.cont h1{
+	color: #282828;
+	font-size: 3em;
+	letter-spacing: 3px;
+	text-transform: capitalize;
+	font-family: 'Barlow', sans-serif;
+	margin: 0 0 10px 0 ;
+	position: relative;
+	margin-bottom: 50px;
+	animation: animateText 2s linear infinite;
+}
+@keyframes animateText{
+	0%{
+		transform: translateY(-200px);
+	}
+	100%{
+		transform: translateY(200px);
+	}
+}
+/*#42abff, #ff4fe8,#ffeb3b*/
+
+.icon-animation{
+	width: 100%;
+	height: 100%;
+
+	position: absolute;
+	
+}
+.icon-cloud{
+	font-size: 3em;
+	color: white;
+	-webkit-text-stroke:3px #000;
+	position: absolute;
+	top: calc(15px * var(--i));
+	left: calc(150px * var(--i));
+	animation: animateCloud 1.6s linear infinite;
+	animation-delay: calc(-0.5s * var(--i))
+}
+@keyframes animateCloud{
+	0%{
+		transform: translateY(calc(-15 * 5px));
+	}
+	100%{
+		transform: translateY(calc(70 * 5px));
+	}
+}
+
+
+
+
+
+
+
